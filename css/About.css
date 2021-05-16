@@ -2,11 +2,11 @@
   margin: 0;
   padding: 0;
   font-family: Century Gothic;
+  box-sizing: border-box;
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../pic/33.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../pic/33.jpg);
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -20,6 +20,7 @@ ul {
 
 ul li {
   display: inline-block;
+  
 }
 
 ul li a {
@@ -44,20 +45,34 @@ ul li.active a {
   float: left;
   width: 150px;
   height: auto;
-  margin-top: -25px;
+  margin-top: -0px;
+  align-items: center;
+  
+
 }
 
+ 
 .main {
   max-width: 1200px;
   margin: auto;
   font-size: 20px;
+  display:flex;
+  justify-content:space-around;
+  min-width: 8vh;
 }
-
+.niv{
+display: inline-flexbox;
+padding: 40px;
+margin: 10px;
+align-items: center;
+}
 .title {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 40px;
+margin: 10px;
 }
 
 .title {
@@ -92,3 +107,4 @@ footer {
   background-color: rgba(204, 100, 30, 0.544);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+
